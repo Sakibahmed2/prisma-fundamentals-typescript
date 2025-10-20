@@ -13,7 +13,7 @@ const main = async () => {
     },
   });
 
-  // Find unique
+  // Find unique and unique or throw
   const findUnique = await prisma.post.findUniqueOrThrow({
     where: {
       id: 10,

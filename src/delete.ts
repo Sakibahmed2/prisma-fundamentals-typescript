@@ -11,11 +11,7 @@ const deletes = async () => {
   //   });
 
   // Delete multiple data
-  const deleteMany = await prisma.post.deleteMany({
-    where: {
-      published: true,
-    },
-  });
+  const deleteMany = await prisma.post.deleteMany({});
 
   console.log(deleteMany);
 };

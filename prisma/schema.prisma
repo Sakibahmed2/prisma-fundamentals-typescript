@@ -28,8 +28,8 @@ model User {
   username String   @unique
   email    String
   role     UserRole @default(user)
-  profile  Profile?
-  post     Post[]
+  profile  Profile? // one to one relation
+  post     Post[] // one to many relation
 
   @@map("users")
 }
